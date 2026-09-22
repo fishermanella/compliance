@@ -1,0 +1,30 @@
+▲ Next.js 16.1.1 (Turbopack)
+- Local:         http://localhost:5000
+- Network:       http://0.0.0.0:5000
+
+✓ Starting...
+---- discovered routes (/tmp/coze-web-0/0cd6a89a0bd0c514ef5068fdd15585e51553bf023e01bd3be8ec581b1ef65f7a/dev/.next/dev/types/routes.d.ts) ----
+type AppRoutes = "/" | "/monitor"
+type AppRouteHandlerRoutes = "/api/dashboard" | "/api/events" | "/api/events/[id]" | "/api/monitor/run" | "/api/monitor/status" | "/api/report/excel" | "/api/wechat-links"
+type PageRoutes = never
+---- end of discovered routes ----
+✓ Ready in 1025ms
+ GET / 200 in 699ms (compile: 390ms, render: 310ms)
+ GET / 200 in 60ms (compile: 4ms, render: 56ms)
+ GET / 200 in 69ms (compile: 15ms, render: 54ms)
+ GET / 200 in 38ms (compile: 2ms, render: 36ms)
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+ GET /api/dashboard 200 in 1380ms (compile: 1005ms, render: 376ms)
+ GET /api/report/excel 200 in 303ms (compile: 209ms, render: 94ms)
+ POST /api/monitor/run 200 in 93ms (compile: 36ms, render: 57ms)
+[monitor] 采集完成: dg=0 wechat=0 xyz=3
+[monitor] 去重: 采集 3 → 新增 0（已有 3）
+[monitor] 运行完成 run=eebebdc2-217d-4043-94a4-c5bc630db563 耗时=1s 采集=3 入库=0 相关=0 高=0 核验=0 状态=partial
+ GET /api/monitor/status?run_id=eebebdc2-217d-4043-94a4-c5bc630db563 200 in 89ms (compile: 34ms, render: 54ms)
+ GET /api/dashboard 200 in 60ms (compile: 3ms, render: 56ms)
+ GET / 200 in 34ms (compile: 4ms, render: 30ms)
+ GET /monitor 200 in 65ms (compile: 29ms, render: 36ms)
+ GET /api/events?limit=30&only_relevant=1 200 in 73ms (compile: 26ms, render: 48ms)
+ GET /api/events?limit=30&only_relevant=1 200 in 39ms (compile: 4ms, render: 35ms)
+ GET /monitor 200 in 67ms (compile: 3ms, render: 64ms)
+ GET /api/events?limit=30&only_relevant=1 200 in 45ms (compile: 3ms, render: 42ms)
