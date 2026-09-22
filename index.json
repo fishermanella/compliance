@@ -1,0 +1,12 @@
+[
+  {
+    "name": "monitor_compliance.py",
+    "path": "./codeact/scripts/monitor_compliance.py",
+    "description": "周度站点合规监测脚本：向指定站点发起监测运行请求，轮询等待完成后输出中文播报（display_only）。通过 POST /api/monitor/run 启动，GET /api/monitor/status 轮询（间隔10s，最长25min），支持网络失败重试（最多3次）。",
+    "params": {
+      "result_mode": "display_only",
+      "site_url": "https://vstx7nsnwd.coze.site"
+    },
+    "status": "active"
+  }
+]
